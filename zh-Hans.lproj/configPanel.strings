@@ -1,0 +1,21 @@
+/* configPanel - iTerm2 Chinese (Simplified) localization */
+
+"OK" = "好";
+"Bold:" = "粗体:";
+"ASCII code:" = "ASCII 码:";
+"Preferences" = "设置";
+"Session" = "会话";
+"Window" = "窗口";
+"Rows:" = "行数:";
+"Font" = "字体";
+"Cols:" = "列数:";
+"Text:" = "文本:";
+"Non-ASCII Font" = "非 ASCII 字体";
+"Encoding:" = "编码:";
+"Idle character" = "空闲字符";
+"Name:" = "名称:";
+"Selection:" = "选中内容:";
+"Anti-Aliasing" = "抗锯齿";
+"Transparency:" = "透明度:";
+"Background:" = "背景:";
+"Cancel" = "取消";

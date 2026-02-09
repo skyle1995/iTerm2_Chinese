@@ -1,0 +1,15 @@
+/* UKCrashReporter - iTerm2 Chinese (Simplified) localization */
+
+"MISSING_EMAIL_ADDRESS" = "<请在此填写您的电子邮件地址>";
+"WANT_TO_SEND_CRASH" = "应用程序 %@ 最近发生了崩溃。为了帮助改进该程序，您可以将系统的崩溃日志和设置文件的副本发送给开发者，以便他们利用这些信息修复该错误。您想要发送日志吗？";
+"COULDNT_SEND_FEEDBACK_ERROR" = "无法发送您的消息。";
+"WANT_TO_SEND_CRASH_SEND_LATER" = "稍后发送";
+"CRASH_REPORT_CGI_URL" = "https://iterm2.com/crashreportform.php";
+"WANT_TO_SEND_CRASH_SEND" = "发送";
+"WANT_TO_SEND_CRASH_DONT_SEND" = "不发送";
+"FEEDBACK_MESSAGE_TEXT" = "您好，iTerm2 开发者，\n\n以下是我想说的：\n\n\t...\n\n-- %%LONGUSERNAME\n\n请回复至 %%EMAILADDRESS";
+"WANT_TO_SEND_CRASH_TITLE" = "您想要报告上次的崩溃吗？";
+"SYSTEM_INFO_TAB_NAME" = "系统信息";
+"FEEDBACK_EXPLANATION_TEXT" = "请在下方输入您的消息。如果您要报告错误，请包含您的 Mac 和操作系统版本信息，以及帮助重现问题的步骤列表。\n\n请务必填写您的电子邮件地址，否则我们将无法回复您。";
+"COULDNT_SEND_CRASH_REPORT_ERROR" = "无法提交崩溃报告";
+"COULDNT_SEND_CRASH_REPORT_ERROR_OK" = "好";

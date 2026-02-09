@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 .backup/
 .backup-nibs/
+.claude/
+.venv/
+
+# 翻译中间产物
+group*.json
+missing*.json
+nib-strings-*.json

@@ -9,7 +9,6 @@ import sys
 import io
 import json
 
-sys.path.insert(0, '/tmp/nibenv/lib/python3.12/site-packages')
 from nibarchive import NIBArchiveParser, NIBValueType, NIBArchive, NIBValue
 
 
@@ -157,7 +156,7 @@ def patch_nib(nib_path, translations, output_path):
             if lookup_key in trans_lookup and val.type == NIBValueType.DATA:
                 if isinstance(val.data, bytes):
                     new_text = trans_lookup[lookup_key]
-                    val.data = new_text.encode('utf-8') + b'\x00'
+                    val.data = new_text.encode('utf-8')
                     patched += 1
 
     # Serialize

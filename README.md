@@ -1,13 +1,12 @@
-# iTerm2 简体中文汉化包
+# iTerm2 简体中文汉化补丁
 
-为 [iTerm2](https://iterm2.com/) 提供简体中文界面翻译。
+社区维护的 iTerm2 简体中文界面汉化补丁，与 [iTerm2 官方项目](https://github.com/gnachman/iTerm2) 无关。
 
-iTerm2 官方不支持中文界面，本项目通过 macOS 标准本地化机制（`.lproj`）实现菜单栏、设置面板、对话框等主要界面元素的汉化。
+通过 NIBArchive 二进制补丁直接修改界面文件，实现菜单栏、设置面板、对话框等界面元素的汉化。
 
 ## 支持版本
 
 - iTerm2 **3.6.6**（已测试）
-- 理论上兼容 3.x 系列其他版本
 
 ## 安装
 
@@ -17,111 +16,117 @@ cd iTerm2-zh-CN
 bash scripts/install.sh
 ```
 
+安装脚本会自动：
+1. 创建 Python 虚拟环境并安装 `nibarchive` 依赖
+2. 备份所有原始 nib 文件到 `.backup-nibs/`
+3. 应用中文翻译补丁到 70 个界面文件
+4. 重签名应用
+
 安装完成后，完全退出 iTerm2（Command+Q）再重新打开即可。
 
-> 前提：macOS 系统语言需包含简体中文。如未设置，请前往「系统设置 → 通用 → 语言与地区」添加。
+**前提条件**：Python 3（macOS 自带或通过 Homebrew 安装）
 
 ## 卸载
 
 ```bash
-cd iTerm2-zh-CN
 bash scripts/uninstall.sh
 ```
 
+从备份恢复所有原始 nib 文件并重签名。
+
 ## 翻译覆盖范围
 
-| 文件 | 内容 | 条目数 |
-|------|------|--------|
-| MainMenu.strings | 菜单栏（文件、编辑、显示、窗口等） | 57 |
-| iTerm.strings | 对话框、通知、提示信息 | 122 |
-| PreferencePanel.strings | 设置面板 | 158 |
-| AddressBook.strings | 配置文件/书签管理 | 92 |
-| configPanel.strings | 配置面板 | 19 |
-| UKCrashReporter.strings | 崩溃报告 | 13 |
-| PseudoTerminal.strings | 终端窗口 | 1 |
-
-**共计约 462 条翻译**，覆盖主要用户界面元素。
+- **70 个 nib 文件**，共 **2317 条翻译**
+- 覆盖：菜单栏、设置面板（所有标签页）、对话框、工具栏、快捷键设置等
 
 ## 已知限制
 
-- 部分界面文本在代码中硬编码，无法通过 `.strings` 文件翻译
+- 部分文本在 iTerm2 源码中硬编码，无法通过 nib 补丁翻译（如高级设置页面）
 - iTerm2 更新后需要重新运行安装脚本
-- 安装过程会移除 iTerm2 的代码签名并重新进行本地签名（ad-hoc signing），不影响正常使用
-- 翻译基于 macOS 官方术语标准，个别翻译可能与使用习惯不同
+- 安装会移除原有代码签名并进行本地签名（ad-hoc signing），不影响正常使用
 
 ## 翻译原则
 
 - 遵循 [Apple 官方中文本地化术语](https://developer.apple.com/cn/localization/)
 - iTerm 品牌名保持英文
 - 技术术语（Shell、Terminal、xterm 等）保持英文
-- 功能键（F1-F20）、修饰键（Shift、Control 等）保持英文
-- 格式化占位符（%@、%d 等）保持不变
+- 功能键、修饰键保持英文
+- 格式化占位符（`%@`、`%d` 等）保持不变
 
 ## 项目结构
 
 ```
 iTerm2-zh-CN/
-├── zh-Hans.lproj/          # 翻译后的 .strings 文件
-├── strings-original/       # 原始英文 .strings（JSON 格式，供参考）
+├── README.md                # 本文件
+├── LICENSE                  # GPLv2
+├── METHODOLOGY.md           # 本地化方法论（面向 AI/开发者）
+├── all_translations.json    # 翻译数据（核心资产）
 ├── scripts/
-│   ├── install.sh          # 安装脚本
-│   └── uninstall.sh        # 卸载脚本
-└── README.md
+│   ├── install.sh           # 一键安装
+│   ├── uninstall.sh         # 一键卸载
+│   ├── nib_patch.py         # NIB 补丁核心工具
+│   ├── nib_extract.py       # 字符串提取工具
+│   └── patch_all.py         # 批量补丁脚本
+└── .gitignore
 ```
 
 ## AI 部署指南
 
-如果你使用 AI 编程助手（如 Claude Code、Cursor 等）来帮你安装本汉化包，可以直接给它以下指令：
+本节为 AI 编程助手（Claude Code、Cursor 等）提供技术细节。
 
-> 帮我安装 iTerm2 中文汉化包，仓库地址 https://github.com/Loveacup/iTerm2-zh-CN
+### 原理
 
-### 技术细节（供 AI 参考）
+iTerm2 不使用 macOS 标准的 Base Internationalization，其界面文本直接存储在 NIBArchive 二进制文件中。本项目通过解析 nib 文件、替换字符串数据、重新序列化来实现汉化。
 
-本项目通过 macOS 标准 `.lproj` 本地化机制工作，无需重新编译 iTerm2。部署流程：
+### 依赖
 
-1. **克隆仓库**: `git clone https://github.com/Loveacup/iTerm2-zh-CN.git`
-2. **复制翻译文件**: 将 `zh-Hans.lproj/` 目录复制到 `/Applications/iTerm.app/Contents/Resources/`（需 sudo）
-3. **修改 Info.plist**: 用 `/usr/libexec/PlistBuddy` 在 `/Applications/iTerm.app/Contents/Info.plist` 中添加 `CFBundleLocalizations` 数组，包含 `en` 和 `zh-Hans`
-4. **重签名**: `codesign --force --deep --sign - /Applications/iTerm.app`
-5. **重启 iTerm2**: 用户需完全退出（Command+Q）再重新打开
+- Python 3
+- [nibarchive](https://pypi.org/project/nibarchive/) — NIBArchive 解析库
 
-也可以直接运行 `bash scripts/install.sh` 一键完成以上步骤。
+### 手动部署步骤
+
+如果安装脚本不适用，可以手动执行：
+
+```bash
+# 1. 创建虚拟环境
+python3 -m venv .venv
+.venv/bin/pip install nibarchive
+
+# 2. 备份原始 nib（首次执行）
+mkdir -p .backup-nibs
+for f in /Applications/iTerm.app/Contents/Resources/*.nib; do
+    cp "$f" ".backup-nibs/$(basename "$f")"
+done
+
+# 3. 应用补丁
+.venv/bin/python3 scripts/patch_all.py
+
+# 4. 重签名
+codesign --force --deep --sign - /Applications/iTerm.app
+```
 
 ### 更新翻译流程
 
-当 iTerm2 发布新版本时，可能需要更新翻译：
+当 iTerm2 发布新版本时：
 
-1. 从新版 iTerm2 提取 `.strings` 文件：
-   ```bash
-   for f in /Applications/iTerm.app/Contents/Resources/*.strings; do
-       plutil -convert json -o "strings-original/$(basename "${f%.strings}.json")" "$f"
-   done
-   ```
-2. 对比 `strings-original/` 中的新旧 JSON，找出新增/变更的 key
-3. 翻译新增条目，更新 `zh-Hans.lproj/` 中对应的 `.strings` 文件
+1. 提取新版字符串：`.venv/bin/python3 scripts/nib_extract.py new_strings.json`
+2. 对比 `all_translations.json` 找出新增/变更的字符串
+3. 翻译新增条目，更新 `all_translations.json`
 4. 重新运行 `bash scripts/install.sh`
 
-### .strings 文件格式规范
+### 常见问题
 
-```
-/* 注释（可选） */
-"English Key" = "中文翻译";
-```
+**Q: 安装后 iTerm2 无法启动？**
+A: 运行 `bash scripts/uninstall.sh` 恢复原始文件，然后检查是否有重签名错误。
 
-- 编码：UTF-8 或 UTF-16LE
-- 每行一个键值对，分号结尾
-- key 必须与原始 `.strings` 文件中的 key 完全一致
-- 保留 `%@`、`%d`、`\n` 等格式化占位符
+**Q: 安装后部分文字仍是英文？**
+A: 代码中硬编码的字符串无法通过 nib 补丁修改，这是已知限制。
 
-## 贡献
+**Q: 如何查看翻译数据？**
+A: `all_translations.json` 是一个 JSON 文件，结构为 `{nib文件名: {对象索引.属性名: 翻译文本}}`。
 
-欢迎提交 Pull Request 改进翻译质量。编辑 `zh-Hans.lproj/` 下的 `.strings` 文件即可。
-
-`.strings` 文件格式：
-```
-"English Key" = "中文翻译";
-```
+详细技术文档请参阅 [METHODOLOGY.md](METHODOLOGY.md)。
 
 ## 许可证
 
-MIT License
+本项目基于 [GPLv2](LICENSE) 许可证发布，与 [iTerm2](https://github.com/gnachman/iTerm2) 保持一致。

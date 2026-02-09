@@ -1204,7 +1204,102 @@
     "10290.NS.bytes": "AXIdentifier",
     "10293.NS.bytes": "AXIdentifier",
     "10296.NS.bytes": "AXIdentifier",
-    "10299.NS.bytes": "AXIdentifier"
+    "10299.NS.bytes": "AXIdentifier",
+    "1579.NS.bytes": "点击类型：",
+    "1968.NS.bytes": "选择标签页的快捷键：",
+    "1989.NS.bytes": "选择拆分面板的快捷键：",
+    "1993.NS.bytes": "激活窗口的快捷键：",
+    "2005.NS.bytes": "热键窗口：",
+    "2014.NS.bytes": "应用热键：",
+    "2050.NS.bytes": "将右 Control (⌃) 键映射为：",
+    "2054.NS.bytes": "将右 Option (⌥) 键映射为：",
+    "2058.NS.bytes": "将 fn 键映射为：",
+    "2074.NS.bytes": "将右 Command (⌘) 键映射为：",
+    "2078.NS.bytes": "将左 Option (⌥) 键映射为：",
+    "2082.NS.bytes": "将左 Command (⌘) 键映射为：",
+    "2086.NS.bytes": "将左 Control (⌃) 键映射为：",
+    "2357.NS.bytes": "Token 限制：",
+    "2630.NS.bytes": "API 密钥：",
+    "2644.NS.bytes": "连接时，将窗口恢复为：",
+    "2661.NS.bytes": "窗口恢复策略：",
+    "2840.NS.bytes": "GPU 渲染器：",
+    "2844.NS.bytes": "Python API：",
+    "2848.NS.bytes": "剪贴板历史：",
+    "2852.NS.bytes": "即时回放：",
+    "2905.NS.bytes": "始终使用推荐的模型，来自：",
+    "2909.NS.bytes": "AI 模型：",
+    "3019.NS.bytes": "聊天权限：",
+    "3024.NS.bytes": "AI 补全：",
+    "3040.NS.bytes": "Shell 集成更新：",
+    "3044.NS.bytes": "应用更新：",
+    "3060.NS.bytes": "命令选择：",
+    "3064.NS.bytes": "拷贝模式：",
+    "3088.NS.bytes": "视为单词一部分的字符：",
+    "3104.NS.bytes": "全屏幕：",
+    "3112.NS.bytes": "新窗口位置：",
+    "3127.NS.bytes": "备份与恢复：",
+    "3131.NS.bytes": "外部设置：",
+    "3155.NS.bytes": "状态栏：",
+    "3312.NS.bytes": "背景图片：",
+    "3405.NS.bytes": "新标签页：",
+    "3428.NS.bytes": "新窗口：",
+    "3523.NS.bytes": "缩放模式：",
+    "3755.NS.bytes": "自动配置文件切换：",
+    "3833.NS.bytes": "语义历史：",
+    "3839.NS.bytes": "代码片段过滤器：",
+    "3866.NS.bytes": "智能选择：",
+    "3988.NS.bytes": "如果除以下进程外还有其他任务：",
+    "4088.NS.bytes": "会话结束后：",
+    "4114.NS.bytes": "密码管理器：",
+    "4134.NS.bytes": "日志格式：",
+    "4183.NS.bytes": "标签栏位置：",
+    "4187.NS.bytes": "状态栏位置：",
+    "4246.NS.bytes": "标题栏：",
+    "4267.NS.bytes": "HTML 标题：",
+    "4318.NS.bytes": "上下边距：",
+    "4322.NS.bytes": "每面板 UI：",
+    "4326.NS.bytes": "左右边距：",
+    "4350.NS.bytes": "调暗量：",
+    "4420.NS.bytes": "页面缩放：",
+    "4468.NS.bytes": "初始目录：",
+    "4480.NS.bytes": "启动时发送文本：",
+    "4517.NS.bytes": "URL 方案：",
+    "4623.NS.bytes": "窗口标题：",
+    "4627.NS.bytes": "标签页标题：",
+    "4635.NS.bytes": "会话标题：",
+    "4639.NS.bytes": "按全局热键跳转到此会话：",
+    "4650.NS.bytes": "会话名称：",
+    "4715.NS.bytes": "配置文件类型：",
+    "4769.NS.bytes": "初始 URL：",
+    "4824.NS.bytes": "ENQ 应答：",
+    "4848.NS.bytes": "字符编码：",
+    "4929.NS.bytes": "回滚行数：",
+    "4984.NS.bytes": "报告终端类型：",
+    "5012.NS.bytes": "tmux 集成：",
+    "5016.NS.bytes": "Shell 集成：",
+    "5032.NS.bytes": "仿真功能：",
+    "5036.NS.bytes": "鼠标报告：",
+    "5121.NS.bytes": "fn 键：",
+    "5131.NS.bytes": "热键窗口：",
+    "5152.NS.bytes": "左 Command (⌘) 键：",
+    "5169.NS.bytes": "左 Control (⌃) 键：",
+    "5200.NS.bytes": "左 Option (⌥) 键：",
+    "5207.NS.bytes": "右 Command (⌘) 键：",
+    "5224.NS.bytes": "右 Control (⌃) 键：",
+    "5246.NS.bytes": "右 Option (⌥) 键：",
+    "5271.NS.bytes": "按键报告：",
+    "5275.NS.bytes": "按键行为：",
+    "5331.NS.bytes": "鼠标报告：",
+    "5527.NS.bytes": "细笔画：",
+    "5550.NS.bytes": "文本渲染：",
+    "5562.NS.bytes": "非 ASCII 字体：",
+    "5751.NS.bytes": "光标增强：",
+    "5780.NS.bytes": "淡化文本：",
+    "5818.NS.bytes": "搜索结果：",
+    "5826.NS.bytes": "最小对比度：",
+    "5918.NS.bytes": "颜色预设：",
+    "5947.NS.bytes": "ANSI 颜色：",
+    "5951.NS.bytes": "光标引导线："
   },
   "AITerm.nib": {
     "19.NS.bytes": "System",
@@ -1225,7 +1320,8 @@
     "119.NS.bytes": "取消",
     "141.NS.bytes": "您的 AI 提供商可能会对每个发送或接收的 token 收费。",
     "149.NS.bytes": "window",
-    "151.NS.bytes": "delegate"
+    "151.NS.bytes": "delegate",
+    "15.NS.bytes": "iTerm2 integrates with the major LLM providers for various AI features. <a href=\"$3\">Learn more here</a>.\n\niTerm2 is currently configured to use $4. You can change your AI provider in Settings > General > AI.\n\nBefore you can use this feature, you’ll need an API key. If you don’t already have one, you’ll need to <a href=\"$1\">create an account</a> and <a href=\"$2\">generate an API</a>. Then enter it below:"
   },
   "AboutWindow.nib": {
     "17.NS.bytes": "System",
@@ -1245,7 +1341,8 @@
     "193.NS.bytes": "Whitebox",
     "200.NS.bytes": "whitebox_logo",
     "209.NS.bytes": "window",
-    "221.NS.bytes": "delegate"
+    "221.NS.bytes": "delegate",
+    "149.NS.bytes": "iTerm2 is supported by these backers on <a href=\"https://patreon.com/gnachman\">Patreon</a> and <a href=\"https://github.com/sponsors/gnachman\">GitHub Sponsors</a>:"
   },
   "AdvancedWorkingDirectoryWindow.nib": {
     "13.NS.bytes": ".AppleSystemUIFont",
@@ -1291,7 +1388,8 @@
     "91.NS.bytes": "拷贝配置文件设置",
     "102.NS.bytes": "取消",
     "109.NS.bytes": "window",
-    "121.NS.bytes": "delegate"
+    "121.NS.bytes": "delegate",
+    "98.NS.bytes": "到这些配置文件："
   },
   "CommandHistoryPopup.nib": {
     "16.NS.bytes": "value",
@@ -1345,7 +1443,9 @@
     "341.NS.bytes": "选择命令的输出",
     "343.NS.bytes": "共享命令…",
     "345.NS.bytes": "将命令写入终端",
-    "347.NS.bytes": "将目录写入终端"
+    "347.NS.bytes": "将目录写入终端",
+    "179.NS.bytes": "返回码：",
+    "199.NS.bytes": "运行时间："
   },
   "DirectoriesPopup.nib": {
     "9.NS.bytes": "value",
@@ -1450,7 +1550,8 @@
     "18.NS.bytes": ".AppleSystemUIFont",
     "20.NS.bytes": "System",
     "44.NS.bytes": "view",
-    "46.NS.bytes": "delegate"
+    "46.NS.bytes": "delegate",
+    "37.NS.bytes": "制表符对应空格数："
   },
   "PasteView.nib": {
     "11.NS.bytes": "正在粘贴…",
@@ -1513,7 +1614,8 @@
     "85.NS.bytes": "取消",
     "95.NS.bytes": "coprocesssPanel_",
     "108.NS.bytes": "window",
-    "112.NS.bytes": "delegate"
+    "112.NS.bytes": "delegate",
+    "79.NS.bytes": "要运行的协处理命令："
   },
   "SSHConfigurationWindow.nib": {
     "8.NS.bytes": "窗口",
@@ -1529,7 +1631,10 @@
     "154.NS.bytes": "浏览",
     "176.NS.bytes": "window",
     "178.NS.bytes": "delegate",
-    "188.NS.bytes": "Table View Cell"
+    "188.NS.bytes": "Table View Cell",
+    "27.NS.bytes": "要复制到远程主机的环境变量：",
+    "40.NS.bytes": "要复制到远程主机的文件：",
+    "146.NS.bytes": "SSH 路径："
   },
   "SpecialExceptionsWindowController.nib": {
     "15.NS.bytes": ".AppleSystemUIFont",
@@ -1555,7 +1660,8 @@
     "235.NS.bytes": "编辑特殊例外",
     "242.NS.bytes": "使用码位",
     "247.NS.bytes": "到",
-    "277.NS.bytes": "Table View Cell"
+    "277.NS.bytes": "Table View Cell",
+    "251.NS.bytes": "字体："
   },
   "SplitPanel.nib": {
     "4.NS.bytes": "SplitPanel",
@@ -1609,7 +1715,8 @@
     "239.NS.bytes": "openInTabsButton_",
     "241.NS.bytes": "openInWindowsButton_",
     "243.NS.bytes": "removeWindowButton_",
-    "245.NS.bytes": "searchField_"
+    "245.NS.bytes": "searchField_",
+    "201.NS.bytes": "连接时如果窗口数达到此数量则不打开窗口："
   },
   "UKCrashReporter.nib": {
     "4.NS.bytes": "UKCrashReporter",
@@ -1668,7 +1775,11 @@
     "115.NS.bytes": "取消",
     "128.NS.bytes": "pt",
     "137.NS.bytes": "window",
-    "139.NS.bytes": "delegate"
+    "139.NS.bytes": "delegate",
+    "95.NS.bytes": "最大宽度：",
+    "103.NS.bytes": "最大高度：",
+    "120.NS.bytes": "右边距：",
+    "124.NS.bytes": "上边距："
   },
   "iTermBuildingScriptWindowController.nib": {
     "15.NS.bytes": "窗口",
@@ -1696,7 +1807,9 @@
     "149.NS.bytes": "升级",
     "153.NS.bytes": "此脚本必须升级为“完整环境”才能添加依赖项。此操作会拷贝一份 Python 运行时，但不会占用额外的磁盘空间。",
     "179.NS.bytes": "window",
-    "181.NS.bytes": "delegate"
+    "181.NS.bytes": "delegate",
+    "44.NS.bytes": "Python 版本：",
+    "137.NS.bytes": "添加"
   },
   "iTermEditKeyActionWindowController.nib": {
     "13.NS.bytes": ".AppleSystemUIFont",
@@ -1718,7 +1831,9 @@
     "263.NS.bytes": "取消",
     "270.NS.bytes": "window",
     "272.NS.bytes": "delegate",
-    "292.NS.bytes": "Table View Cell"
+    "292.NS.bytes": "Table View Cell",
+    "11.NS.bytes": "颜色预设：",
+    "132.NS.bytes": "键盘快捷键："
   },
   "iTermEditSnippetWindowController.nib": {
     "11.NS.bytes": "C 风格反斜杠转义",
@@ -1797,7 +1912,9 @@
     "246.NS.bytes": "浮动窗口会覆盖在其他窗口和 Dock 之上，以及其他应用的全屏窗口之上（如果热键窗口的空间设置为“所有空间”）。",
     "250.NS.bytes": "window",
     "259.NS.bytes": "delegate",
-    "300.NS.bytes": "注意：仅当窗口因另一个应用变为活跃状态而关闭时才会重新打开。"
+    "300.NS.bytes": "注意：仅当窗口因另一个应用变为活跃状态而关闭时才会重新打开。",
+    "11.NS.bytes": "双击按键：",
+    "238.NS.bytes": "点击 Dock 图标时："
   },
   "iTermJobTreeViewController.nib": {
     "17.NS.bytes": "job",
@@ -1985,7 +2102,8 @@
     "345.NS.bytes": "menu",
     "406.NS.bytes": "生成随机密码。按住 Option 键则仅使用字母和数字。",
     "408.NS.bytes": "此值将追加到密码之后。",
-    "410.NS.bytes": "⌘U"
+    "410.NS.bytes": "⌘U",
+    "106.NS.bytes": "用户名："
   },
   "iTermPasteSpecialViewController.nib": {
     "11.NS.bytes": "Base-64 编码",
@@ -2025,7 +2143,10 @@
     "254.NS.bytes": "DOS 和 UNIX 换行符通常不作为输入使用。CR 是标准格式。",
     "257.NS.bytes": "将各种引号和破折号转换为其 ASCII 等价物。",
     "259.NS.bytes": "制表符、换行符、换页符和回车符是仅有的“安全”控制码。",
-    "261.NS.bytes": "当运行中的应用发送了启用“括号粘贴模式”的转义码时，此选项生效。粘贴的字符串将被转义码“括起来”，表示其中的文本来自粘贴操作。"
+    "261.NS.bytes": "当运行中的应用发送了启用“括号粘贴模式”的转义码时，此选项生效。粘贴的字符串将被转义码“括起来”，表示其中的文本来自粘贴操作。",
+    "133.NS.bytes": "将制表符转换为空格：",
+    "213.NS.bytes": "块间延迟：",
+    "221.NS.bytes": "块大小："
   },
   "iTermPasteSpecialWindow.nib": {
     "12.NS.bytes": "mm:ss",
@@ -2035,7 +2156,8 @@
     "94.NS.bytes": "窗口",
     "102.NS.bytes": "粘贴",
     "107.NS.bytes": "取消",
-    "132.NS.bytes": "window"
+    "132.NS.bytes": "window",
+    "88.NS.bytes": "最短持续时间："
   },
   "iTermPreferencesSearchEngineResultsWindowController.nib": {
     "19.NS.bytes": ".AppleSystemUIFont",
@@ -2057,7 +2179,8 @@
     "17.NS.bytes": ".AppleSystemUIFont",
     "19.NS.bytes": "System",
     "41.NS.bytes": "包含时间戳",
-    "52.NS.bytes": "view"
+    "52.NS.bytes": "view",
+    "15.NS.bytes": "文件格式："
   },
   "iTermScriptConsole.nib": {
     "8.NS.bytes": "脚本控制台",
@@ -2131,7 +2254,9 @@
     "150.NS.bytes": "窗口",
     "158.NS.bytes": "取消",
     "164.NS.bytes": "window",
-    "168.NS.bytes": "delegate"
+    "168.NS.bytes": "delegate",
+    "83.NS.bytes": "选择 Python 环境：",
+    "144.NS.bytes": "选择脚本模板："
   },
   "iTermShellIntegrationWindowController.nib": {
     "32.NS.bytes": "安装 Shell Integration",
@@ -2271,7 +2396,10 @@
     "208.NS.bytes": "高级…",
     "217.NS.bytes": "view",
     "221.NS.bytes": "delegate",
-    "245.NS.bytes": "紧凑排列算法可以同时显示更多状态栏组件，但它们的位置可能会更频繁地跳动。"
+    "245.NS.bytes": "紧凑排列算法可以同时显示更多状态栏组件，但它们的位置可能会更频繁地跳动。",
+    "22.NS.bytes": "分隔符颜色：",
+    "40.NS.bytes": "背景颜色：",
+    "46.NS.bytes": "默认文本颜色："
   },
   "iTermTextPopoverViewController.nib": {
     "17.NS.bytes": "System",

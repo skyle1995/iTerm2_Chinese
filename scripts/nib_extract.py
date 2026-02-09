@@ -8,9 +8,6 @@ import json
 import sys
 import os
 
-# Add venv to path
-sys.path.insert(0, '/tmp/nibenv/lib/python3.12/site-packages')
-
 from nibarchive import NIBArchiveParser, NIBValueType
 
 # Properties that represent user-visible strings

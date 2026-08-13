@@ -4,6 +4,8 @@ __pycache__/
 .backup-nibs/
 .claude/
 .venv/
+build/
+.DS_Store
 
 # 翻译中间产物
 group*.json

@@ -13,7 +13,8 @@ import shutil
 sys.path.insert(0, os.path.dirname(__file__))
 from nib_patch import patch_nib
 
-ITERM_RESOURCES = '/Applications/iTerm.app/Contents/Resources'
+ITERM_RESOURCES = os.path.join(
+    os.environ.get('ITERM_APP', '/Applications/iTerm.app'), 'Contents', 'Resources')
 PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
 BACKUP_DIR = os.path.join(PROJECT_DIR, '.backup-nibs')
 TRANS_FILE = os.path.join(PROJECT_DIR, 'all_translations.json')

@@ -1,0 +1,15 @@
+# 本仓库不运行任何 CI/CD 工作流。
+# 迁移至 GitHub 时刻意保持无工作流运行，避免任何自动化触发。
+#
+# 本文件不是有效工作流：`on` 仅为占位，且 job 为空引用，GitHub Actions
+# 会将其视为无效并跳过（不会调度任何 runner）。
+#
+# 如需启用自动化，请先删除本文件，再新增真实的 workflow 定义。
+name: disabled-placeholder
+on: workflow_dispatch
+jobs:
+  disabled:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "workflows disabled by project policy"

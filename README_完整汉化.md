@@ -1,5 +1,8 @@
 # iTerm2 3.6.11 完整简体中文汉化包(双层方案)
 
+> 📦 仓库地址:<https://github.com/skyle1995/iTerm2_Chinese>
+> (本项目唯一官方仓库;原 Gitea 地址已停用)
+
 本目录包含针对 **iTerm2 3.6.11** 的完整界面汉化数据与工具。汉化分两层实现,
 两层配合后,界面文字(菜单、设置窗口含全部 455 条高级设置、对话框、
 标签右键菜单、终端内右键菜单、通知等)基本实现 100% 中文。
@@ -72,6 +75,10 @@ Method Swizzling 在运行时拦截 AppKit 的字符串设置方法并翻译:
 `/Applications/iTerm.app`)。
 
 ```bash
+# 获取项目(仅首次)
+git clone https://github.com/skyle1995/iTerm2_Chinese.git
+cd iTerm2_Chinese
+
 bash scripts/install.sh     # 一键:nib 补丁 + dylib 构建/注入/重签名
 ```
 
@@ -95,7 +102,8 @@ open -a iTerm
 ## 卸载汉化
 
 ```bash
-cd /Volumes/Device/Project/Python/iTerm2_Chinese
+git clone https://github.com/skyle1995/iTerm2_Chinese.git
+cd iTerm2_Chinese
 bash scripts/uninstall.sh
 ```
 

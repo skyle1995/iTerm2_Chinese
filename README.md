@@ -2,6 +2,7 @@
 
 # 🇨🇳 iTerm2 简体中文汉化补丁(双层方案)
 
+[![Repo](https://img.shields.io/badge/github-skyle1995%2FiTerm2__Chinese-181717?logo=github)](https://github.com/skyle1995/iTerm2_Chinese)
 [![License](https://img.shields.io/badge/license-GPLv2-blue)](LICENSE)
 [![iTerm2](https://img.shields.io/badge/iTerm2-3.6.11-green)](https://iterm2.com/)
 [![nib](https://img.shields.io/badge/nib_层-1421_条-blueviolet)](#-翻译覆盖范围)
@@ -92,10 +93,13 @@ ITERM_APP=/path/to/iTerm.app bash scripts/install.sh
 ## 🚀 安装
 
 ```bash
-git clone https://hub.ifunx.com/skyle1995/iTerm2_Chinese.git
+git clone https://github.com/skyle1995/iTerm2_Chinese.git
 cd iTerm2_Chinese
 bash scripts/install.sh
 ```
+
+> 📦 项目主页:<https://github.com/skyle1995/iTerm2_Chinese>
+> (自 2026-11 起为本项目唯一官方仓库，原 Gitea 地址已停用)
 
 安装脚本自动完成 5 步:
 
